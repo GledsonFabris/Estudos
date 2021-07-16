@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title><!--sempre colocar todos formatos de videos devido a incompatibilidade dos navegdores-->
+</head>
+<body>
+    <h1>Reprodução de videos hospedados localmente</h1><!--Exemplos MP4,OGV,WEBM-->
+    <p>Este video esta hospedados no meu proprio servidor</p>
+    <video src="midia/tratorcampo.mp4" width="560" height="315" controls></video> <!--Exemplo 1-->
+
+    <!--Exemplo 2-->
+    <video width="560" height="315" poster="midia/HTML5.png" controls autoplay loop>
+            <source src="midia/tratorcampo.mp4" type="video/mp4">
+            <source src="midia/tratorcampo.m4v" type="video/m4v">
+            <source src="midia/tratorcampo.webm" type="video/WEBM">
+            <source src="midia/tratorcampo.ogv" type="video/OGG">
+            <p>Seu navegador no é compativel com reprodução de videos.</p>
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
